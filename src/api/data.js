@@ -13,3 +13,13 @@ export const getDragList = () => {
     method: 'get'
   })
 }
+
+export const Myworks = () => {
+  console.log('heihei')
+  var res = axios.request({
+    url: 'api/test/',
+    method: 'get'
+  })
+  console.log(res)
+  return res
+}

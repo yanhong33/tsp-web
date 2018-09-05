@@ -9,6 +9,7 @@ import i18n from '@/locale'
 import config from '@/config'
 import importDirective from '@/directive'
 import 'iview/dist/styles/iview.css'
+import '@/assets/custom.css'
 import './index.less'
 import '@/assets/icons/iconfont.css'
 // import '@/mock'
@@ -36,4 +37,4 @@ new Vue({
   i18n,
   store,
   render: h => h(App)
-})
+});

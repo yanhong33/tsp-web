@@ -10,18 +10,18 @@
       </side-menu>
     </Sider>
     <Layout>
-      <Header class="header-con">
-        <header-bar :collapsed="collapsed" @on-coll-change="handleCollapsedChange">
-          <user :user-avator="userAvator"/>
-          <language @on-lang-change="setLocal" style="margin-right: 10px;" :lang="local"/>
-          <fullscreen v-model="isFullscreen" style="margin-right: 10px;"/>
-        </header-bar>
-      </Header>
+      <!--<Header class="header-con">-->
+        <!--<header-bar :collapsed="collapsed" @on-coll-change="handleCollapsedChange">-->
+          <!--<user :user-avator="userAvator"/>-->
+          <!--<language @on-lang-change="setLocal" style="margin-right: 10px;" :lang="local"/>-->
+          <!--<fullscreen v-model="isFullscreen" style="margin-right: 10px;"/>-->
+        <!--</header-bar>-->
+      <!--</Header>-->
       <Content class="main-content-con">
         <Layout class="main-layout-con">
-          <div class="tag-nav-wrapper">
-            <tags-nav :value="$route" @input="handleClick" :list="tagNavList" @on-close="handleCloseTag"/>
-          </div>
+          <!--<div class="tag-nav-wrapper">-->
+            <!--<tags-nav :value="$route" @input="handleClick" :list="tagNavList" @on-close="handleCloseTag"/>-->
+          <!--</div>-->
           <Content class="content-wrapper">
             <keep-alive :include="cacheList">
               <router-view/>
